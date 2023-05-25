@@ -19,7 +19,7 @@ function createTransformer(src, filename, config) {
 	const jsx = mdx.sync(withFrontMatter)
 	const toTransform = `import {mdx} from '@mdx-js/react';${jsx}`
 
-	return process(toTransform, filename, config).code
+	return process(toTransform, filename, config)
 }
 
 module.exports = {
